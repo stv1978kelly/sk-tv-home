@@ -1,0 +1,10 @@
+{
+  "name": "sk-tv-home",
+  "version": "1.0.0",
+  "description": "SK home screen for Steve's Samsung TV (a TizenBrew app module).",
+  "packageType": "app",
+  "appName": "SK Home",
+  "appPath": "app/index.html",
+  "keys": [],
+  "license": "UNLICENSED"
+}
