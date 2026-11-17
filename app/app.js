@@ -114,6 +114,9 @@
     });
   }
   setInterval(refresh, 60000); refresh();
+  // Brought back to the front by the PC (SK Home button, TV switched on): read the PC again straight away, so a
+  // waiting "open TizenTube" from the phone happens now and the weather and heating are fresh.
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) { busy = false; draw(); refresh(); } });
 
   draw();
 })();
