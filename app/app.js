@@ -84,7 +84,7 @@
     else if (k === 38) focus = focus - COLS >= 0 ? focus - COLS : focus;
     else if (k === 40) focus = Math.min(n - 1, focus + COLS < n ? focus + COLS : focus);
     else if (k === 13) { open(TILES[focus]); return; }
-    else if (k === 10009) { e.preventDefault(); return; }      // Back: stay on the home screen
+    else if (k === 10009) { e.preventDefault(); history.back(); return; }   // Back: to TizenBrew's menu (settings, modules)
     else return;
     e.preventDefault(); draw();
   });
